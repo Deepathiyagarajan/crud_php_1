@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <form action="insert.php" method="post">
+    <label>Name:</label>
+    <input type="text" name="name" placeholder="Enter your name"><br><br>
+    <label>Age:</label>
+    <input type="text" name="age" placeholder="Enter your age"><br><br>
+    <label>Email:</label>
+    <input type="text" name="email" placeholder="Enter your email"><br><br>
+    <label>Password:</label>
+    <input type="text" name="password" placeholder="Enter your password"><br><br>
+    <label >Gender:
+        <label>Male</label>
+        <input type="radio" name="gender" value="male">
+        <label>Female</label>
+        <input type="radio" name="gender" value="female">
+    </label><br><br>
+    <label>Qualification:
+       <input type="checkbox" name="qualification[]" value="10th">10th
+       <input type="checkbox" name="qualification[]" value="12th">12th
+       <input type="checkbox" name="qualification[]" value="UG">UG
+       <input type="checkbox" name="qualification[]" value="PG">PG
+    </label><br><br>
+    <label>Skills:
+        <select name="skill[]" multiple >
+            <option value="html">Html</option>
+            <option value="php">Php</option>
+            <option value="laravel">laravel</option>
+        </select>
+    </label><br><br>
+    <label>City:
+         <select name="city">
+            <option value="coimbatore">Coimbatore</option>
+            <option value="chennai">Chennai</option>
+            <option value="bangalore">Bangalore</option>
+         </select>
+    </label><br><br>
+
+    <input type="submit" name="submit" value="Save Datas">
+</form>
+</body>
+</html>
